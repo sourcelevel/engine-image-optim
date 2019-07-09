@@ -1,6 +1,6 @@
 .PHONY: image test
 
-IMAGE_NAME ?= plataformatec/engine-image-optim
+IMAGE_NAME ?= sourcelevel/engine-image-optim
 
 image:
 	docker build --rm -t $(IMAGE_NAME) .
