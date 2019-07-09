@@ -1,0 +1,12 @@
+language: ruby
+sudo: false
+after_success: "./script/push"
+services:
+- docker
+cache:
+  directories:
+  - vendor/cache
+notifications:
+  email: false
+env:
+  global:
