@@ -1,5 +1,5 @@
 FROM codeclimate/alpine-ruby:b38
-MAINTAINER Plataformatec <opensource@plataformatec.com.br>
+MAINTAINER SourceLevel <support@sourcelevel.io>
 
 # Based on https://github.com/toy/image_optim_pack/pull/5
 ENV JPEGOPTIM_VERSION=1.4.3 \
