@@ -37,7 +37,7 @@ class Engine::ImageOptimTest < Minitest::Test
   end
 
   def assert_issue(io, check_name, path, msg = nil)
-    found = issues(io.string).any? do |issue|
+    found = issues(io.string).select do |issue|
       issue['check_name'] == check_name && issue['location']['path'] == path
     end
 

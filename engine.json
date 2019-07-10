@@ -2,8 +2,8 @@
   "name": "image-optim",
   "description": "Check for uncompressed images",
   "maintainer": {
-    "name": "Plataformatec",
-    "email": "opensource@plataformatec.com.br"
+    "name": "SourceLevel",
+    "email": "support@sourcelevel.io"
   },
   "languages": ["Ruby"],
   "spec_version": "0.0.1",
