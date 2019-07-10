@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+if [ -n "$TRAVIS" ] && ([ "$TRAVIS_SECURE_ENV_VARS" != "true" ] || [ "$TRAVIS_BRANCH" != "master" ] || [ "$TRAVIS_PULL_REQUEST" != "false" ])
+then
+  echo "Skipping automatic image push " >&2
+  exit 0
+fi
+
+if [ -z "$DOCKER_USERNAME" ] || [ -z "$DOCKER_PASSWORD" ]
+then
+  echo "Missing Docker Hub credentials" >&2
+  exit 1
+fi
+
+docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
+make publish
