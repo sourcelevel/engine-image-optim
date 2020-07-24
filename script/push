@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [ -n "$TRAVIS" ] && ([ "$TRAVIS_SECURE_ENV_VARS" != "true" ] || [ "$TRAVIS_BRANCH" != "master" ] || [ "$TRAVIS_PULL_REQUEST" != "false" ])
+if [ -n "$TRAVIS" ] && ([ "$TRAVIS_SECURE_ENV_VARS" != "true" ] || [ "$TRAVIS_BRANCH" != "main" ] || [ "$TRAVIS_PULL_REQUEST" != "false" ])
 then
   echo "Skipping automatic image push " >&2
   exit 0
