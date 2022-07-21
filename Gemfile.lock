@@ -40,7 +40,7 @@ GEM
     progress (3.1.1)
     rake (11.1.2)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     virtus (1.0.5)
       axiom-types (~> 0.1)
